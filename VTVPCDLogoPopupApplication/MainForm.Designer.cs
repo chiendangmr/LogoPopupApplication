@@ -110,6 +110,7 @@
             this.popupPlayList = new DevExpress.XtraBars.PopupMenu(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnUpdate = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -491,6 +492,7 @@
             // 
             // panelControl15
             // 
+            this.panelControl15.Controls.Add(this.btnUpdate);
             this.panelControl15.Controls.Add(this.cbLayer);
             this.panelControl15.Controls.Add(this.label7);
             this.panelControl15.Controls.Add(this.label5);
@@ -676,7 +678,7 @@
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.Image = global::VTVPCDLogoPopupApplication.Properties.Resources.navigate_right2;
             this.btnAdd.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnAdd.Location = new System.Drawing.Point(683, 252);
+            this.btnAdd.Location = new System.Drawing.Point(683, 278);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(63, 61);
             this.btnAdd.TabIndex = 1;
@@ -1028,6 +1030,17 @@
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnUpdate.Location = new System.Drawing.Point(683, 189);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(63, 28);
+            this.btnUpdate.TabIndex = 36;
+            this.btnUpdate.Text = "Lưu lại";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // MainForm
             // 
             this.AcceptButton = this.btnAdd;
@@ -1165,5 +1178,6 @@
         private DevExpress.XtraEditors.ComboBoxEdit cbLayer;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Timer timer1;
+        private DevExpress.XtraEditors.SimpleButton btnUpdate;
     }
 }
